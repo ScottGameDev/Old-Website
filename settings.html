@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="settingstylesheet.css">
+<link rel="stylesheet" type="text/css" href="dark.css">
+<link rel="stylesheet" type="text/css" href="light.css">
+
+<html>
+    <body style="background-color:grey;"></body>
+</div>
+
+<head>
+<script src="cookie.js"></script>
+
+    <style>
+        /*Top navigation bar */
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+        
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+        
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+        
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    </style>
+
+</head>
+<script>
+    function LoadCss(cssPath) {
+    var thisCss = document.createElement('link');
+    thisCss.rel = 'stylesheet';
+    thisCss.type = 'text/css';
+    thisCss.href = cssPath; 
+
+    head.appendChild(thisCss); 
+    }
+
+    if (theme == "dark") {
+        LoadCss("dark.css");
+    } else {
+        LoadCss("light.css");
+    }
+</script>
+
+<html>
+<body>
+<div class="topnav">
+    <a class="active" href="Index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="settings.html">Settings</a>
+</div>
+
+<h1>Settings</h1>
+<p>What would you like to change.</p>
+<p>WARNING THIS IS NOT FULLY WORKING YET AND WILL BE UPDATED SOON.</p>
+<button type="LightMode" id="button1" class="button">Light Mode</button>
+<button type="DarkMode" id="button2" class="button">Dark Mode</button>
+
+
+
+<style>
+    h1 {text-align: center;}
+    p {text-align: center; font-size: 25px;}
+</style>
+
+</body>
+
+</html>
